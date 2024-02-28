@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:lab2_test/screenProfile/screenElements/tabBarProfileWidgets/TabBarProfile.dart';
+import 'package:lab2_test/screenProfile/screenElements/tabBarSettingsWidget/TabBarSettings.dart';
+import 'AccountWidget.dart';
 
 class TabBarMainScreen extends StatelessWidget {
   const TabBarMainScreen({super.key});
@@ -45,10 +48,12 @@ class TabBarMainScreen extends StatelessWidget {
                 ]
             ),
             toolbarHeight: 256,
+            title: const AccountWidget()
           ),
           body: const TabBarView(
             children: [
-
+              TabBarProfile(),
+              TabBarSettings()
             ],
           ),
         ),
