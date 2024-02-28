@@ -10,15 +10,17 @@ class AccountWidget extends StatelessWidget {
       children: [
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [ IconButton(onPressed:(){} ,
+          children: [
+            IconButton(onPressed:(){} ,
               icon: const Image(image: AssetImage('assets/exit_screen.png'),
                   width: 24, height: 24)),
             IconButton(onPressed:(){} ,
                 icon: const Image(image: AssetImage('assets/exit_account.png'),
-                    width: 24, height: 24))],
+                    width: 24, height: 24))]
         ),
         const Column(
-          children: [Image(image: AssetImage('assets/photo.png'),
+          children: [
+            Image(image: AssetImage('assets/photo.png'),
               width: 110, height: 110),
             SizedBox(height: 36),
             Text("Екатерина",
@@ -27,7 +29,7 @@ class AccountWidget extends StatelessWidget {
                 color: Colors.black,
                 fontSize: 24,
                 fontFamily: 'SFProText',
-                fontWeight: FontWeight.w700,
+                fontWeight: FontWeight.w700
               ),
             ),
           ],
