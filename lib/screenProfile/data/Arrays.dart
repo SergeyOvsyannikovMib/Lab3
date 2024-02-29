@@ -1,5 +1,7 @@
-import '../SubscriptionsWidget.dart';
-import '../TariffWidget.dart';
+
+
+import '../screenElements/tabBarProfileWidgets/SubscriptionsWidget.dart';
+import '../screenElements/tabBarProfileWidgets/TariffWidget.dart';
 
 final List<Tariff> tariff = <Tariff>[
   Tariff("Изменить суточный лимит", "На платежи и переводы", "assets/speedometer.png"),

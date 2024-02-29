@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lab2_test/screenProfile/screenElements/tabBarProfileWidgets/TabBarProfile.dart';
-import 'package:lab2_test/screenProfile/screenElements/tabBarProfileWidgets/data/Colors.dart';
 import 'package:lab2_test/screenProfile/screenElements/tabBarSettingsWidget/TabBarSettings.dart';
+import '../data/Colors.dart';
 import 'AccountWidget.dart';
 
 class TabBarMainScreen extends StatelessWidget {

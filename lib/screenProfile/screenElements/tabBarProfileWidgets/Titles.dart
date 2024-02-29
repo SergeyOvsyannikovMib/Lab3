@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'data/Colors.dart';
+import '../../data/Colors.dart';
 
 class Titles extends StatelessWidget {
 

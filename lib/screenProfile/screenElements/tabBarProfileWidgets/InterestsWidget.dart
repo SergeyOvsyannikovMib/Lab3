@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lab2_test/screenProfile/screenElements/tabBarProfileWidgets/Titles.dart';
-import 'data/Arrays.dart';
-import 'data/Colors.dart';
+import '../../data/Arrays.dart';
+import '../../data/Colors.dart';
 
 class InterestsWidget extends StatelessWidget {
   const InterestsWidget({super.key} );

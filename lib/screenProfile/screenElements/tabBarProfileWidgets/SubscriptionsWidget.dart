@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'Titles.dart';
-import 'data/Arrays.dart';
-import 'data/Colors.dart';
+import '../../data/Arrays.dart';
+import '../../data/Colors.dart';
 
 class Services {
   String name;
