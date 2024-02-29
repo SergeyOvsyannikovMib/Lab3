@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lab2_test/screenProfile/screenElements/tabBarProfileWidgets/TabBarProfile.dart';
+import 'package:lab2_test/screenProfile/screenElements/tabBarProfileWidgets/data/Colors.dart';
 import 'package:lab2_test/screenProfile/screenElements/tabBarSettingsWidget/TabBarSettings.dart';
 import 'AccountWidget.dart';
 
@@ -16,8 +17,8 @@ class TabBarMainScreen extends StatelessWidget {
           appBar: AppBar(
             backgroundColor: Colors.white,
             bottom: TabBar(
-                dividerColor: const Color(0x1F000000),
-                unselectedLabelColor: const Color(0x8C000000),
+                dividerColor: greyColor,
+                unselectedLabelColor: almostBlackColor,
                 indicatorColor: const Color(0xFF068441),
                 indicatorSize: TabBarIndicatorSize.tab,
                 labelColor: Colors.black,

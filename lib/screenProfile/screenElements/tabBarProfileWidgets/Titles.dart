@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'data/Colors.dart';
+
 class Titles extends StatelessWidget {
 
   final String title;
@@ -27,7 +29,7 @@ class Titles extends StatelessWidget {
 
             Text(subtitle,
               style: const TextStyle(
-                color: Color(0x8C000000),
+                color: almostBlackColor,
                 fontSize: 14,
                 fontFamily: 'SFProText',
                 fontWeight: FontWeight.w500,

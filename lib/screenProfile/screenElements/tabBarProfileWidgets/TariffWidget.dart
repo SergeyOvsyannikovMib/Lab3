@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'Titles.dart';
+import 'data/Arrays.dart';
+import 'data/Colors.dart';
 
 class Tariff {
   String title;
@@ -7,12 +9,6 @@ class Tariff {
   String patch;
   Tariff(this.title, this.subtitle, this.patch);
 }
-
-final List<Tariff> tariff = <Tariff>[
-  Tariff("Изменить суточный лимит", "На платежи и переводы", "assets/speedometer.png"),
-  Tariff("Переводы без комиссии", "Показать остаток в этом месяце", "assets/percent.png"),
-  Tariff("Информация о тарифах и лимитах", "" ,"assets/arrows_forward_back.png")
-];
 
 class TariffWidget extends StatelessWidget {
   const TariffWidget({super.key} );
@@ -26,7 +22,7 @@ class TariffWidget extends StatelessWidget {
           children: [
             const Titles(title: "Тарифы и лимиты", subtitle: "Для операций в Сбербанк Онлайн"),
 
-            const SizedBox(height: 12,),
+            const SizedBox(height: 12),
 
             ListView.builder(shrinkWrap: true,
                 itemCount: tariff.length,
@@ -58,7 +54,7 @@ class TariffWidget extends StatelessWidget {
                                   ),
                                   Text(tariff[index].subtitle,
                                     style: const TextStyle(
-                                      color: Color(0x8C000000),
+                                      color: almostBlackColor,
                                       fontSize: 14,
                                       fontFamily: 'SFProText',
                                       fontWeight: FontWeight.w500,

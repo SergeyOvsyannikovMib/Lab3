@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'Titles.dart';
+import 'data/Arrays.dart';
+import 'data/Colors.dart';
 
 class Services {
   String name;
@@ -8,10 +10,6 @@ class Services {
   String patch;
   Services(this.name, this.payment, this.cost, this.patch);
 }
-final List<Services> services = <Services>[
-  Services("СберПрайм"," Платеж 9 июля","199 P в месяц", "assets/sber_icon.png"),
-  Services("Переводы", "Автопродление 21 августа", "199 P в месяц", "assets/percent_circle.png")
-];
 
 class SubscriptionsWidget extends StatelessWidget {
   const SubscriptionsWidget({super.key} );
@@ -83,7 +81,7 @@ class SubscriptionsWidget extends StatelessWidget {
 
                                     Text(services[index].cost,
                                       style: const TextStyle(
-                                        color: Color(0x8C000000),
+                                        color: almostBlackColor,
                                         fontSize: 14,
                                         fontFamily: 'SFProText',
                                         fontWeight: FontWeight.w500,

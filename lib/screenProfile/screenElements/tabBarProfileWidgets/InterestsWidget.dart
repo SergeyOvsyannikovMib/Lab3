@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lab2_test/screenProfile/screenElements/tabBarProfileWidgets/Titles.dart';
-
-List<String> interests = ["Еда", "Саморазвитие", "Технологии", "Дом", "Досуг", "Забота о себе", "Наука"];
+import 'data/Arrays.dart';
+import 'data/Colors.dart';
 
 class InterestsWidget extends StatelessWidget {
   const InterestsWidget({super.key} );
@@ -26,7 +26,7 @@ class InterestsWidget extends StatelessWidget {
                   Container(
                       clipBehavior: Clip.antiAlias,
                       decoration: ShapeDecoration(
-                        color: const Color(0x8C000000),
+                        color: almostBlackColor,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(16),
                         ),
@@ -35,7 +35,7 @@ class InterestsWidget extends StatelessWidget {
                         child: InkWell(
                           onTap: (){print("onTapped");},
                           child: Container(
-                              color: const Color(0x1F000000),
+                              color: greyColor,
                               padding: EdgeInsets.symmetric(horizontal: 12, vertical: 7) ,
                               child: Text( i ,
                                 style: const TextStyle(
