@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'Titles.dart';
 
-class Services{
+class Services {
   String name;
   String payment;
   String cost;
@@ -55,7 +55,8 @@ class SubscriptionsWidget extends StatelessWidget {
                               children: [
                                 Column(crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Row(children: [Image(image: AssetImage(services[index].patch),
+                                    Row(children: [
+                                      Image(image: AssetImage(services[index].patch),
                                         width: 36, height: 36),
                                       const SizedBox(width: 8),
                                       Text(services[index].name,
