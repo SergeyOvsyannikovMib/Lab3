@@ -8,7 +8,7 @@ void main() => runApp( MaterialApp(
   ),
   initialRoute: '/',
   routes: {
-    '/': (context) => const MainScreen(),
-  },
+    '/': (context) => const MainScreen()
+  }
 )
 );
